@@ -1,0 +1,24 @@
+{
+  "name": "embroidery-storefront",
+  "version": "1.0.0",
+  "description": "A storefront site for my B2B embroidery business. Built with TypeScript and HTML.",
+  "main": "index.js",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KylerGit/embroidery-storefront.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KylerGit/embroidery-storefront/issues"
+  },
+  "homepage": "https://github.com/KylerGit/embroidery-storefront#readme"
+}
