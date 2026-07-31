@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North Thread Embroidery</title>
+    <style>
+      :root {
+        --bg: #f5f2eb;
+        --text: #1d1d1b;
+        --muted: #5d5a54;
+        --line: #d7d0c2;
+        --card: #fbfaf7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #f8f6f1 0%, #f2eee5 100%);
+        color: var(--text);
+      }
+
+      .page-shell {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .brand {
+        font-size: 0.95rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .nav {
+        display: flex;
+        gap: 20px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 48px;
+        align-items: center;
+        padding: 72px 0 56px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 16px;
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+      }
+
+      .hero-copy p {
+        max-width: 640px;
+        margin: 0 0 28px;
+        font-size: 1.02rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 18px;
+        text-decoration: none;
+        border: 1px solid var(--text);
+        font-weight: 700;
+        font-size: 0.92rem;
+      }
+
+      .btn-primary {
+        background: var(--text);
+        color: #fff;
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--text);
+      }
+
+      .panel {
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid var(--line);
+        padding: 24px;
+        box-shadow: 0 16px 40px rgba(20, 20, 20, 0.05);
+      }
+
+      .panel .metric {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .stat {
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .stat:first-child {
+        border-top: none;
+        padding-top: 0;
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 1.35rem;
+        margin-bottom: 4px;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin: 24px 0 70px;
+      }
+
+      .service-card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        padding: 22px;
+      }
+
+      .service-card h3 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+      }
+
+      .service-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 0.96rem;
+      }
+
+      footer {
+        padding: 24px 0 16px;
+        border-top: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 760px) {
+        .hero,
+        .services {
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">Thread Point</div>
+        <nav class="nav">
+          <span>Custom Stitching</span>
+          <span>Wholesale Orders</span>
+          <span>Get a Quote</span>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow">Minimal embroidery, maximum precision</div>
+            <h1>Clean stitching for modern brands.</h1>
+            <p>
+              We create premium embroidered details for apparel, gifting, and retail-ready product lines with a refined finish and dependable turnaround.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="mailto:hello@norththread.example">Request a Quote</a>
+              <a class="btn btn-secondary" href="#services">View Services</a>
+            </div>
+          </div>
+
+          <aside class="panel">
+            <div class="metric">
+              <div class="stat">
+                <strong>48 hr</strong>
+                <span>Rush sampling window</span>
+              </div>
+              <div class="stat">
+                <strong>500+</strong>
+                <span>Pieces fulfilled monthly</span>
+              </div>
+              <div class="stat">
+                <strong>4.9/5</strong>
+                <span>Client satisfaction</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span>Quality-checked output</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="services" class="services">
+          <article class="service-card">
+            <h3>Brand Marking</h3>
+            <p>Precise logo embroidery tailored to polos, jackets, bags, and premium uniforms.</p>
+          </article>
+          <article class="service-card">
+            <h3>Small Batch Runs</h3>
+            <p>Low minimums for boutique collections, event wear, and product launches.</p>
+          </article>
+          <article class="service-card">
+            <h3>Materials & Finish</h3>
+            <p>Thread recommendations, placement guidance, and production support from concept to delivery.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <span>Thread Point Embroidery</span>
+        <span id="year">2026</span>
+      </footer>
+    </div>
+
+    <script defer src="dist/main.js"></script>
+  </body>
+   </html>
