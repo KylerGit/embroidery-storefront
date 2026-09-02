@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Quote | Thread Point</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">Thread Point</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a class="active" href="quote.html">Get a Quote</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-intro quote-intro">
+          <div>
+            <div class="eyebrow">Start a project</div>
+            <h1>Tell us what you’re making.</h1>
+          </div>
+          <p>Share a few details and we’ll follow up with practical next steps, timing, and a clear estimate.</p>
+        </section>
+
+        <form class="quote-form" action="mailto:hello@norththread.example" method="post" enctype="text/plain">
+          <label>Full name<input name="name" type="text" required /></label>
+          <label>Work email<input name="email" type="email" required /></label>
+          <label>What do you need?<select name="service"><option>Brand marking</option><option>Small batch run</option><option>Materials and finish guidance</option><option>Something else</option></select></label>
+          <label>Tell us about the project<textarea name="project" rows="6" placeholder="Garment type, quantity, artwork status, and timing"></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Project Details</button>
+        </form>
+      </main>
+
+      <footer>
+        <span>Thread Point Embroidery</span>
+        <span id="year">2026</span>
+      </footer>
+    </div>
+    <script defer src="dist/main.js"></script>
+  </body>
+</html>
